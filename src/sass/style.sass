@@ -1,5 +1,88 @@
 @import "~bootstrap/scss/bootstrap"
-@import "./fonts"
+// @import "./fonts"
 @import "./reset"
 
 $enable-responsive-font-sizes: true
+
+$base-white: #FFFFFF
+$text: #696A86
+$accent1: #9595C9
+$accent2: #F01F35
+
+body
+    font-family: 'Poppins'
+    color: $text
+
+.main
+    min-height: 100vh
+    background: url('../img/main-bg.png') center top / cover
+    padding-top: 45px
+
+.logo
+    position: absolute
+    left: -60px
+    top: -27px
+
+
+    &__text
+        position: relative
+        margin-left: 20px
+        font-family: Roboto
+        +rfs(22)
+        color: #505050
+
+.menu
+
+    &__link
+        margin-right: 58px
+        +rfs(18)
+        color:#717784
+        text-decoration: none!important
+
+        &:hover
+            color: #000
+
+
+
+.button
+    width: 234px
+    height: 60px
+    border: 3px solid $accent1
+    border-radius: 10px
+    font-weight: bold
+    +rfs(18)
+    color: $base-white
+    outline: none!important
+
+    &:hover
+           background-color: #8B8BB6
+           border: 3px solid #8B8BB6
+
+    &__cta-menu
+        background-color: $accent1
+        position: relative
+        top: -24px
+
+    &__cta-header
+        background-color: $accent1
+
+
+.header-wrapper
+    margin-top: 240px
+    max-width: 750px
+
+.header-title
+    font-family: DM Serif Display
+    +rfs(56)
+
+    &__text
+        margin-top: 30px
+        +rfs(18)
+        color: $text
+
+.button-wrapper__header
+    margin-top: 30px
+
+
+
+
