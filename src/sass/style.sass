@@ -19,17 +19,13 @@ body
 .main
     min-height: 100vh
     background: url('../img/main-bg.png') center top / cover
-    padding-top: 45px
 
 .logo
-    position: absolute
-    left: -60px
-    top: -27px
-
+    margin-right: 20px
 
     &__text
-        position: relative
-        margin-left: 20px
+
+        margin: auto 0
         font-family: Roboto
         +rfs(22)
         color: #505050
@@ -56,18 +52,11 @@ body
     +rfs(18)
     color: $base-white
     outline: none!important
+    background-color: $accent1
 
     &:hover
-           background-color: #8B8BB6
-           border: 3px solid #8B8BB6
-
-    &__cta-menu
-        background-color: $accent1
-        position: relative
-        top: -24px
-
-    &__cta-header
-        background-color: $accent1
+           background-color: $accent2
+           border: 3px solid  $accent2
 
 
 .header-wrapper
@@ -109,10 +98,10 @@ body
 
     &:hover
         border: 1px solid #9D9D9D
-        box-sizing: content-box
+        box-sizing: border-box
         border-radius: 5px
-        padding: 50px 0px
-        box-shadow: 0px 10px 0px rgba(0,0,0,0.3c)
+        padding: 20px 0px
+        box-shadow: 0px 5px 0px rgba(0,0,0,0.3c)
 
 
     &__title
@@ -144,9 +133,59 @@ body
 .video
     padding-top: 185px
 
+.iframe__wrapper
+    position: relative
+    width: 100%
+    padding-bottom: 50%
+    height: 0
+
+    & iframe
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+
+
 .video-text
     font-family: PT Serif
     +rfs(48)
     max-width: 550px
     margin-bottom: 80px
+
+// Screen 5
+
+.feature
+    padding-top: 55px
+
+    &-block
+        text-align: center
+        margin-top: 162px
+        box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.1)
+        border-radius: 10px
+        box-sizing: border-box
+        border: 1px solid #9D9D9D
+        padding: 60px 50px
+        margin-right: 90px
+        height: 545px
+
+        &:last-child
+            margin-right: 0px
+
+
+        &__title
+            font-weight: 500
+            +rfs(22)
+            color: #000
+            margin: 53px 22px
+
+        &__text
+            +rfs(16)
+            position: relative
+
+.button-wrapper__feature
+    margin-top: 122px
+    margin-left: 70px
+    position: absolute
+
 
